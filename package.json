@@ -1,8 +1,8 @@
 {
   "name": "medusa-starter-default",
   "version": "0.0.1",
-  "description": "A starter for Medusa projects.",
-  "author": "Medusa (https://medusajs.com)",
+  "description": "Coseli Footware",
+  "author": "Ashesh lal Shrestha, Arun Prajapati, Sushant Pokharel, Shankar Neupane",
   "license": "MIT",
   "keywords": [
     "sqlite",
@@ -22,7 +22,8 @@
     "seed": "cross-env medusa seed -f ./data/seed.json",
     "start": "cross-env npm run build && medusa migrations run && medusa start",
     "start:custom": "cross-env npm run build && node --preserve-symlinks --trace-warnings index.js",
-    "dev": "cross-env npm run build:server && medusa develop"
+    "dev": "cross-env npm run build:server && medusa develop",
+    "meilisearch": " sh /home/aarun/meilisearch --master-key='supersecretmaster234'"
   },
   "dependencies": {
     "@medusajs/admin": "^7.1.15",
@@ -32,15 +33,22 @@
     "@medusajs/event-bus-redis": "^1.8.14",
     "@medusajs/file-local": "1.0.4",
     "@medusajs/medusa": "^1.20.8",
+    "@rootxpdev/medusa-email-plugin": "^0.8.0",
+    "@rsc-labs/medusa-marketing": "^0.1.4",
+    "@rsc-labs/medusa-store-analytics": "^0.14.2",
     "@tanstack/react-query": "4.22.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "16.3.1",
     "express": "^4.17.2",
+    "medusa-file-r2": "^0.0.2",
     "medusa-fulfillment-manual": "1.1.41",
     "medusa-interfaces": "1.3.10",
-    "medusa-payment-manual": "1.0.25",
+    "medusa-payment-manual": "^1.0.25",
     "medusa-payment-stripe": "6.0.10",
+    "medusa-plugin-mailjet": "^0.0.6",
+    "medusa-plugin-meilisearch": "^2.0.11",
+    "medusa-plugin-variant-images": "^1.0.5",
     "prism-react-renderer": "^2.0.4",
     "typeorm": "0.3.16"
   },

@@ -3,12 +3,14 @@
 .DS_Store
 /uploads
 /node_modules
+/miliesearch
 yarn-error.log
 
 .idea
 .env.production
 .env
 .vscode
+.env.prod.backup
 
 coverage
 
